@@ -1,0 +1,17 @@
+p{
+    color:red;
+}
+#mission{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 32pt;
+}
+
+.special {                   /* any element with class="special" */
+  background-color: yellow;
+  font-weight: bold;
+}
+.shout {                    /* only p elements with class="special" */
+  color: red;
+  font-family: cursive;
+}
