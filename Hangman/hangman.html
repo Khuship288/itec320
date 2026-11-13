@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <link rel ="stylesheet" href="hangman.css">
-    <script src="hangman.js"></script>
-    <title>Document</title>
+    <script src="hangman.js" defer></script>
+    <title>Hangman</title>
 </head>
 <body>
     <div>
-        <img src="images/hangman6.gif" alt="Picture of Hangman">
+        <img id="hangmangif" src="images/hangman6.gif" alt="Picture of Hangman">
     </div>
     <div id="clue"> Press New Game to Play</div>
     <div>
         <input id="guess" type="text" size="1" maxlength="1">
-        <button>Guess</button>
+        <button onclick="guess();">Guess</button>
     </div>
     <div id="guesses"></div>
     <div id="newgamearea">
