@@ -31,8 +31,14 @@ for(let i=0; i< squares.length; i++){
 }
 function squareClicked(){
     let square = this;
-    topZIndex++;
-    square.style.zIndex= topZIndex;
+    if(square.style.zIndex==topZIndex && square.style.zIndex!=""){
+        square.remove();
+    }
+    else{
+        topZIndex++;
+        square.style.zIndex=topZIndex
+
+    }
 
 }
 function getRandomColor(){
